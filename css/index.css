@@ -11,6 +11,7 @@
     padding: 0;
     direction: rtl;
     font-family: "Almarai", sans-serif;
+    box-sizing: border-box;
 }
 
 .body {
@@ -74,7 +75,7 @@ nav ul li a {
 /* end nav */
 /* start landing */
 .landing {
-    background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.2)), url("../images/background.jpg");
+    background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.2)), url("../images/logo-blue.png");
     background-size: cover;
     background-position: center;
     height: calc(100vh - 90px);
@@ -87,19 +88,40 @@ nav ul li a {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    background-color: #121C2B;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+@media (min-width: 380px){
+    .landing .text {
+        width: 370px
+    }
+}
+
+@media (min-width: 800px){
+    .landing .text {
+        width: 600px
+    }
+}
+
+@media (min-width: 1200px){
+    .landing .text {
+        width: 800px
+    }
 }
 
 .landing h1 {
     margin: 0;
     font-size: 50px;
-    color: var(--second-color);
+    color: white;
 }
 
 .landing p {
     margin-top:10px;
     margin-bottom: 20px;
     font-size: 22px;
-    color: var(--second-color);
+    color: white;
 }
 
 .landing a {
