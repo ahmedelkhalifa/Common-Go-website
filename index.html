@@ -4,35 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Common-Go marketing agency">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
     <title>Common-Go</title>
 </head>
 <body>
-    <!-- nav -->
-     <nav>
+    <!-- header -->
+    <div class="header">
+         <nav>
+            <div class="container">
+                <div class="logo"><img src="images/logo-white.png" alt=""></div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#about" class="active">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#">تواصل</a></li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+         <div class="header-text">
+            <h1>مرحبا بك</h1>
+            <p>خطوات نجاحك تبدأ من هنا، نحن شريكك التسويقي الأول</p>
+         </div>
+    </div>
+    <!-- end header -->
+    <!-- start about -->
+    <div class="about" id="about">
         <div class="container">
-            <div class="logo"><img src="images/logo-white.png" alt=""></div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">من نحن</a></li>
-                    <li><a href="#">الخدمات</a></li>
-                    <li><a href="#">تواصل</a></li>
-                </ul>
+            <div class="heading-text">
+                <h1>Common-Go</h1>
+            </div>
+            <div class="about-content">
+                <div class="text">
+                    <h1>نبذة عنا</h1>
+                    <h2>وكالة CommonGo</h2>
+                    <hr>
+                    <p>وكالة تسويق متكاملة وشريكك الأمثل في بناء منظومة تسويقية متكاملة تضمن لك النجاح والنمو المستمر. في سوق يعج بالحلول التسويقية المتشابهة، نبرز بتقديم نهج فريد يركز على بناء علاقات حقيقية مع عملائنا، وفهم عميق لاحتياجاتهم وسوقهم، نحن لا نقدم مجرد خدمات تسويقية، بل نصنع منظومة متكاملة تنمو معك وتخدمك. سواء كنت شركة ناشئة تبحث عن استراتيجية شاملة ومتابعة احترافية، او مستقلا يحتاج إلى من يتولى عنه عمليات البيع والتفاوض وتقديم خدماته باسلوب احترافي.</p>
+                    <a href="#" class="button">تعرف علينا أكثر</a>
+                </div>
+                <div class="image"><img src="images/LOGOS.pdf.jpg" alt=""></div>
             </div>
         </div>
-     </nav>
-     <!-- nav end -->
-      <section class="landing">
-        <div class="text">
-            <h1>مرحبا بك</h1>
-            <p>وكالة تسويق احترافية، خدماتك التسويقية كلها في مكان واحد</p>
-            <span><a href="#">ابدأ الآن</a></span>
+    </div>
+    <!-- end about -->
+    <!-- start services -->
+    <div class="services" id="services">
+        <div class="container">
+           <div class="heading-text">
+                <h1>ماذا نقدم؟</h1>
+                <p>نقدم مجموعة شاملة من الخدمات التسويقية المصممة خصيصا لتلبية احتياجاتك المتنوعة</p>
+            </div>
+            <div class="services-cont">
+                <div class="srv">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <div class="srv-text">
+                        <h3>إدارة المحتوى</h3>
+                        <p>من كتابة المنشورات الجذابة وإعداد حملات التسويق القصصي، إلى صياغة الهويات البصرية والنصية وتحليل أداء المحتوى وتحسينه باستمرار، نضمن أن يكون محتواك مؤثرًا وجذابا.</p>
+                    </div>
+                </div>
+                <div class="srv">
+                    <i class="fa-solid fa-rectangle-ad"></i>
+                    <div class="srv-text">
+                        <h3>الحملات الممولة</h3>
+                        <p>نقوم بإدارة حملاتك الإعلانية الممولة بفعالية، مستفيدين من تحسين محركات البحث SEO وإدارة منصات التواصل الاجتماعي لبناء استراتيجيات ظهور ونمو قوية.</p>
+                    </div>
+                </div>
+                <div class="srv">
+                    <i class="fa-solid fa-people-roof"></i>
+                    <div class="srv-text">
+                        <h3>إدارة العلاقات</h3>
+                        <p>نساعدك على تحسين تجربة عملائك وبناء علاقات طويلة الأمد معهم من خلال متابعة الشكاوى والاستفسارات بأسلوب احترافي، مما يعزز ثقة العملاء وولائهم.</p>
+                    </div>
+                </div>
+                <div class="srv">
+                    <i class="fa-solid fa-people-arrows"></i>
+                    <div class="srv-text">
+                        <h3>خدمات للمستقلين Freelancers</h3>
+                        <p>نقدم حلولا فريدة للمستقلين حيث نتعامل مع العملاء بالنيابة عنك، ونتفاوض ونعرض سعرك بأسلوب جذاب، ونتابع المشاريع ونسلمها تحت إشرافك، مما يتيح لك التركيز على إبداعك</p>
+                    </div>
+                </div>
+           </div>
         </div>
-      </section>
+    </div>
+    <!-- end services -->
+    <!-- start features -->
+    <div class="features">
+        <div class="container">
+            <div class="heading-text">
+                <h1>من هم عملاؤنا؟</h1>
+                <p>نحن نفخر بخدمة مجموعة واسعة من العملاء من مختلف الأحجام والقطاعات</p>
+            </div>
+            <div class="feat-cont">
+                <div class="feat">
+                <i class="fa-solid fa-user-plus fa-3x"></i>
+                <div class="text">
+                    <h3>مستقلون</h3>
+                    <p>ندعم المستقلين في إدارة علاقاتهم مع العملاء وعمليات البيع، مما يمكّنهم من التفرغ لتقديم أفضل ما لديهم من خدمات</p>
+                </div>
+                </div>
+                <div class="feat">
+                    <i class="fa-solid fa-building fa-3x"></i>
+                    <div class="text">
+                        <h3>مؤسسات كبيرة</h3>
+                        <p>نقدم حلولا تسويقية متكاملة للمؤسسات الكبيرة تساعدها على تعزيز مكانتها في السوق والحفاظ على ريادتها</p>
+                    </div>
+                </div>
+                <div class="feat">
+                    <i class="fa-solid fa-briefcase fa-3x"></i>
+                    <div class="text">
+                        <h3>شركات ناشئة</h3>
+                        <p>نساعد الشركات الناشئة على بناء حضور قوي في السوق وتطوير استراتيجيات تسويقية فعالة لتحقيق النمو السريع</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end features -->
+    <!-- why us? -->
+     <div class="why-us">
+        <div class="container">
+            <div class="heading-text">
+                <h1>لماذا نحن؟</h1>
+                <p>عندما تختارنا كشريكك التسويقي فإنك تستفيد من:</p>
+            </div>
+            <div class="content">
+                <div class="image"><img src="images/why-us.png" alt=""></div>
+                <ul class="benefits">
+                    <li><span>فريق متعدد المهارات والخبرات</span> يضمن لك الحصول على حلول مبتكرة وفعالة.</li>
+                    <li><span>نظام عمل احترافي مرن</span> يتناسب مع احتياجات المستقلين والمبدعين والشركات من مختلف الأحجام.</li>
+                    <li><span>قدرة عالية على فهم احتياجات العميل والسوق</span> مما يمكّننا من تقديم حلول مخصصة تحقق أهدافك بدقة.</li>
+                    <li><span>نسبة سعر بسيطة مقابل جودة عالية</span> نؤمن بتقديم قيمة استثنائية دون المساومة على الجودة.</li>
+                    <li><span>نماذج عمل مخصصة لكل عميل</span> نضمن أن تكون استراتيجيتك التسويقية فريدة ومصممة خصيصا لك.</li>
+                    </ul>
+            </div>
+        </div>
+     </div>
+    <!-- end why us? -->
+    <!-- CTA -->
+     <div class="cta">
+        <div class="container">
+            <p>في CommonGo نؤمن بأن المرونة والاحترافية والتخصيص هي مفتاح النجاح في عالم التسويق المتغير، نحن نكيّف خدماتنا لتناسب احتياجاتك الفريدة. ونعمل
+                باسلوب احترافي يضمن الشفافية والوضوح في كل خطوة، منظومتنا التسويقية ليست مجرد قالب جاهز، بل هي حلول مصممة خصيصا لك تضمن لك تحقيق أقصى استفادة
+                من استثماراتك التسويقية.
+            </p>
+            <a href="#" class="button">احجز استشارتك المجانية الآن</a>
+        </div>
+     </div>
+    <!-- end CTA -->
+    <!-- start footer -->
+     <div class="footer">
+        <div class="container">
+            <h2>تابعنا على منصات التواصل الاجتماعي</h2>
+            <a href="https://www.instagram.com/commongo_marketting/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/106592667" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61573549794941" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <p>All copyrights&copy; are presereved to CommonGo 2025</p>
+        </div>
+     </div>
+    <!-- end footer -->
 </body>
 </html>
