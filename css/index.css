@@ -493,7 +493,8 @@ nav ul li a.active::after {
 /* end cta */
 /* start footer */
 .footer {
-    padding: var(--section-padding) 0 0;
+    padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2);
     text-align: center;
 }
 .footer h2 {

@@ -1,0 +1,209 @@
+/* start global */
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "Almarai", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+:root {
+    --main-color: #2E7EFF;
+    --second-color: #121C2B;
+    --section-padding: 100px;
+}
+/* end global */
+/* start components */
+.heading-text {
+    text-align: center;
+    margin: 0;
+}
+.heading-text h1 {
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+.heading-text h1::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 150px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.heading-text h1::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.heading-text p{
+    margin-top: 40px;
+}
+/* end components */
+/* start nav */
+nav {
+    background-color: var(--second-color);
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo img {
+    width: 100px;
+}
+nav .container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav .container ul li {
+    padding: 10px 20px;
+}
+nav .container ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+nav .container ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+}
+nav .container ul li a:hover::before {
+    width: 100%;
+}
+nav .container ul li a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+/* end nav */
+/* start contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+.contact .content form .main-input {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    caret-color: var(--main-color);
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+.contact .content form input[type = "submit"] {
+    background-color: var(--main-color);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-self: flex-end;
+    border: none;
+    cursor: pointer;
+}
+.contact .content .text {
+    flex-basis: 25%;
+}
+.contact .content .text h4 {
+    margin-bottom: 30px;
+}
+.contact .content .text p {
+    line-height: 2;
+    color: #777;
+}
+.contact .content .text p span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+@media (max-width: 991px) {
+    .contact .content {
+        flex-direction: column;
+    }
+    .contact .content .text {
+        text-align: center;
+        margin-top: 70px;
+    }
+}
+/* end contact */
+/* start footer */
+.footer {
+    padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2);
+    background-color: var(--second-color);
+    color: white;
+    text-align: center;
+}
+.footer h2 {
+    margin-bottom: 20px;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.footer p {
+    margin: 20px 0 10px;
+    direction: ltr;
+    color: white;
+}
+.footer p span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+@media (max-width: 767px) {
+    .footer h2 {
+        font-size: 22px;
+    }
+}
+/* end footer */
